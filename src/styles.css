@@ -1,0 +1,269 @@
+:root {
+  --link-blue: #73b1da;
+  --btn-blue: #0077c5;
+  --white: #fff;
+  --black: #000;
+  --text-grey: #505050;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+div.main-wrapper {
+  height: 100vh;
+  background-color: #eceef1;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: .7rem 1.5rem;
+}
+
+header div.sign-in-options {
+  margin-right: .5rem;
+  font-size: .6rem;
+}
+
+header div.sign-in-options p:first-child {
+  margin: .2rem 0;
+  color: var(--text-grey);
+}
+
+header div.sign-in-options p:last-child {
+  color: var(--link-blue);
+  cursor: pointer;
+}
+
+header div.sign-in-options p:last-child:hover {
+  text-decoration: underline;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  padding: .2rem .8rem;
+  border: 1px solid var(--black);
+  border-radius: .2rem;
+  background-color: var(--btn-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+header button img {
+  height: 1.2rem;
+  margin-right: .4rem;
+}
+
+div.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: .8rem;
+}
+
+div.small-logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .9rem;
+}
+
+a.main-logo,
+a.mint-logo,
+a.quickbooks-logo,
+a.turbotax-logo {
+  background-image: url('./images/logo-sprite.png');
+}
+
+a.main-logo {
+  display: inline-block;
+  height: 1.7rem;
+  width: 5.9rem;
+  margin-bottom: 1rem;
+}
+
+a.mint-logo {
+  height: 1.2rem;
+  width: 3.2rem;
+  margin-right: .5rem;
+  background-position: -254px -56px;
+}
+
+a.quickbooks-logo {
+  height: 1.2rem;
+  width: 6.3rem;
+  margin-right: .5rem;
+  background-position: -115px -56px;
+}
+
+a.turbotax-logo {
+  height: 1.2rem;
+  width: 5rem;
+  background-position: 0 -56px;
+}
+
+
+/******** Form ********/
+
+
+div.form-wrapper {
+  width: 380px;
+  padding: 1.5rem;
+  border: 1px solid #c7c7c7;
+  border-bottom: none;
+  text-align: center;
+  background-color: var(--white);
+}
+
+div.form-wrapper h1 {
+  margin: .5rem 0 .9rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+div.form-wrapper h2,
+a.learn-more {
+  font-size: .7rem;
+  font-weight: 100;
+  color: #aaa;
+}
+
+a.learn-more {
+  display: block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: var(--link-blue);
+}
+
+a.learn-more:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  font-size: .7rem;
+  color: var(--text-grey);
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-top: .4rem;
+  padding: .3rem .5rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+}
+
+form input[type="email"] {
+  margin-bottom: 1.8rem;
+}
+
+form span.recommended-msg {
+  color: #aaa;
+}
+
+form small.call-rates-msg {
+  display: block;
+  margin: .4rem 0 1.9rem;
+  text-align: left;
+  font-size: .5rem;
+  color: #505050;
+}
+
+form input[type="password"] {
+  margin-bottom: 1.5rem;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .5rem 0;
+  border: none;
+  border-radius: .2rem;
+  background-color: var(--btn-blue);
+  font-size: .8rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+form button img {
+  height: 1.2rem;
+  margin-right: .4rem;
+}
+
+form + small.terms-conditions-msg {
+  display: block;
+  margin-top: 1rem;
+  font-size: .6rem;
+  font-style: italic;
+  line-height: 1rem;
+  color: #aaa;
+}
+
+form + small.terms-conditions-msg a,
+div.recaptcha-msg a {
+  text-decoration: none;
+  color: var(--link-blue);
+}
+
+form + small.terms-conditions-msg a:hover,
+div.recaptcha-msg a:hover {
+  text-decoration: underline;
+}
+
+div.recaptcha-msg {
+  width: 380px;
+  padding: 1rem 0;
+  border: 1px solid #c7c7c7;
+  border-top: none;
+  background-color: #eceef1;
+  text-align: center;
+  font-size: .6rem;
+  color: #aaa;
+}
+
+div.centered-content footer {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: .8rem;
+  color: var(--text-grey);
+}
+
+div.centered-content footer a {
+  margin-right: .7rem;
+  text-decoration: none;
+  color: var(--text-grey);
+}
+
+div.centered-content footer a:hover {
+  text-decoration: underline;
+} 
+
+footer.privacy-settings {
+  padding: .9rem;
+}
+
+footer.privacy-settings a {
+  text-decoration: none;
+  font-size: .7rem;
+  color: var(--link-blue);
+}
+
+footer.privacy-settings a:hover {
+  text-decoration: underline;
+}
