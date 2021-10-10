@@ -1,5 +1,5 @@
 import React from 'react';
-import lockIcon from '../images/lock-icon.png';
+import closedLock from '../images/closed-lock.png';
 
 const SignIn = () => (
   <>
@@ -8,7 +8,7 @@ const SignIn = () => (
       <p>I forgot my User ID or Password</p>
     </div>
     <button type="button">
-      <img src={lockIcon} alt="closed lock" />
+      <img src={closedLock} alt="closed lock" />
       Sign In
     </button>
   </>

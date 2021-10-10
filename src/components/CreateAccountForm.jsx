@@ -1,9 +1,9 @@
 import React from 'react';
-import lockIcon from '../images/lock-icon.png';
+import closedLock from '../images/closed-lock.png';
 
 const CreateAccountForm = () => (
   <>
-    <div class="form-wrapper">
+    <div className="form-wrapper">
       <h1>Create an Intuit account</h1>
       <h2>One account for everything Intuit, including Mint.</h2>
       <a className="learn-more" href="#">Learn more</a>
@@ -27,7 +27,7 @@ const CreateAccountForm = () => (
         </label>
 
         <button type="submit">
-          <img src={lockIcon} alt="closed lock" />
+          <img src={closedLock} alt="" />
           Create Account
         </button>
       </form>

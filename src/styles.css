@@ -165,6 +165,12 @@ form input {
   padding: .3rem .5rem;
   border: 1px solid #c7c7c7;
   border-radius: 3px;
+  outline: none;
+}
+
+form input:focus {
+  border: 1px solid var(--btn-blue);
+  box-shadow: 0 0 8px 2px var(--link-blue);
 }
 
 form input[type="email"] {
@@ -185,6 +191,8 @@ form small.call-rates-msg {
 
 form input[type="password"] {
   margin-bottom: 1.5rem;
+  background: url('./images/closed-lock.png') 98% 50% no-repeat;
+  background-size: 25px;
 }
 
 form button {
